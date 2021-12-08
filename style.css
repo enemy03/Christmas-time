@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Mountains of Christmas',
+cursive; */
+
+html {
+    font-size: 10px;
+}
+
+section.logo {
+    position: relative;
+    background-image: url(img/background_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    overflow-x: hidden;
+}
+
+section.logo .menu_burger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    color: #B5B0A7;
+}
+
+section.logo h1 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Mountains of Christmas';
+    color: #008000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 1px #008000);
+    transform: scale(0);
+    animation: 2s linear header both;
+}
+
+h1 span:nth-child(even) {
+    color: #99001C;
+    filter: drop-shadow(1px 1px 1px #99001C);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div.santa {
+    position: absolute;
+    top: 20px;
+    right: -150px;
+    width: 120px;
+    filter: blur(.5px);
+}
+
+div.santa.move {
+    animation: 5s move_santa linear;
+}
+
+@keyframes move_santa {
+    0% {
+        right: -150px;
+        top: 20px;
+    }
+
+    100% {
+        right: 100%;
+        top: 80px;
+
+    }
+}
+
+@keyframes header {
+    0% {
+        transform: scale(0);
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+img.snowman,
+img.gift {
+    display: none;
+}
+
+
+
+
+
+@media (min-width:576px) {
+    section.logo .menu_burger {
+        width: 30px;
+    }
+
+    section.logo h1 {
+        font-size: 6rem;
+    }
+
+    div.santa {
+        width: 130px;
+    }
+}
+
+@media (min-width:576px) and (orientation: landscape) {
+    section.logo {
+        height: 100vh;
+    }
+}
+
+@media (min-width:768px) {
+
+    section.logo .menu_burger {
+        width: 40px;
+    }
+
+    section.logo h1 {
+        font-size: 6.5rem;
+    }
+
+    div.santa {
+        width: 140px;
+    }
+
+    div.snowman {
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        width: 130px;
+        transform: scale(0);
+        animation: 1s 1s linear infinite move_snowman, 1s show_thing linear;
+    }
+
+    img.snowman {
+        display: block;
+
+    }
+
+    @keyframes move_snowman {
+        0% {
+            transform: rotateZ(0);
+        }
+
+
+        50% {
+            transform: rotateZ(3deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    @keyframes show_thing {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+    div.gift {
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        width: 70px;
+        animation: .4s .4s linear infinite move_gift, 1s show_thing linear;
+    }
+
+    img.gift {
+        display: block;
+    }
+
+    @keyframes move_gift {
+        0% {
+            transform: translate(0) rotate(0);
+        }
+
+        25% {
+            transform: translate(1px, 1px) rotate(2deg);
+        }
+
+        50% {
+            transform: translate(0) rotate(0);
+        }
+
+        75% {
+            transform: translate(-1px, -1px) rotate(2deg);
+        }
+
+        100% {
+            transform: translate(0) rotate(0);
+        }
+
+    }
+
+
+}
