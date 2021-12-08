@@ -180,6 +180,7 @@ img.gift {
         bottom: 50px;
         right: 30px;
         width: 70px;
+        line-height: normal;
         animation: .4s .4s linear infinite move_gift, 1s show_thing linear;
     }
 
