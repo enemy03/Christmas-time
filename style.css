@@ -21,6 +21,14 @@ section.logo {
     overflow-x: hidden;
 }
 
+section.logo .wrap_logo {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 section.logo .menu_burger {
     position: absolute;
     top: 10px;
@@ -154,9 +162,17 @@ img.gift {
             transform: rotateZ(0);
         }
 
+        25% {
+            transform: rotateZ(2deg);
+        }
+
 
         50% {
-            transform: rotateZ(3deg);
+            transform: rotateZ(0);
+        }
+
+        75% {
+            transform: rotateZ(-2deg);
         }
 
         100% {
@@ -208,6 +224,114 @@ img.gift {
             transform: translate(0) rotate(0);
         }
 
+    }
+
+
+}
+
+
+@media (min-width:992px) {
+    section.logo h1 {
+        font-size: 7rem;
+    }
+}
+
+
+@media (min-width:1200px) {
+
+    section.logo {
+        background-image: url(img/background_logo_big.png);
+        height: 100vh;
+    }
+
+    section.logo h1 {
+        font-size: 8rem;
+    }
+
+    section.logo .menu_burger {
+        width: 50px;
+    }
+
+    div.santa {
+        top: 50px;
+        right: -250px;
+        width: 120px;
+    }
+
+    @keyframes move_santa {
+        0% {
+            right: -150px;
+            top: 20px;
+        }
+
+        100% {
+            right: 100%;
+            top: 130px;
+
+        }
+    }
+
+
+    div.santa {
+        width: 160px;
+    }
+
+    div.snowman {
+        width: 180px;
+        bottom: 10px;
+        left: 50px;
+    }
+
+    div.gift {
+        width: 100px;
+        bottom: 10px;
+        right: 50px;
+    }
+
+
+}
+
+
+@media (min-width:1200px) {
+
+    section.logo h1 {
+        font-size: 11rem;
+    }
+
+    section.logo .menu_burger {
+        width: 50px;
+        left: 50px;
+        top: 30px;
+    }
+
+    div.santa {
+        top: 30px;
+        right: -250px;
+        width: 180px;
+    }
+
+    @keyframes move_santa {
+        0% {
+            right: -150px;
+        }
+
+        100% {
+            right: 100%;
+            top: 150px;
+
+        }
+    }
+
+    div.snowman {
+        width: 230px;
+        bottom: 10px;
+        left: 50px;
+    }
+
+    div.gift {
+        width: 150px;
+        bottom: 10px;
+        right: 50px;
     }
 
 
