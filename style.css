@@ -5,11 +5,16 @@
 }
 
 /* font-family: 'Mountains of Christmas',
-cursive; */
+cursive;
+font-family: 'Poppins',
+sans-serif; */
 
 html {
     font-size: 10px;
+    overflow-x: hidden;
 }
+
+
 
 section.logo {
     position: relative;
@@ -19,6 +24,12 @@ section.logo {
     background-position: center;
     height: 70vh;
     overflow-x: hidden;
+    right: 0px;
+    transition: .5s linear;
+}
+
+section.logo.active {
+    right: -150px;
 }
 
 section.logo .wrap_logo {
@@ -27,6 +38,9 @@ section.logo .wrap_logo {
     margin: 0 auto;
     height: 100vh;
     overflow-x: hidden;
+    height: 70vh;
+    z-index: 0;
+
 }
 
 section.logo .menu_burger {
@@ -35,6 +49,12 @@ section.logo .menu_burger {
     left: 10px;
     width: 25px;
     color: #B5B0A7;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.menu_burger.active {
+    display: none;
 }
 
 section.logo h1 {
@@ -106,8 +126,62 @@ img.gift {
 }
 
 
+aside.menu.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+aside.menu {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background: #3a7bd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 70vh;
+    width: 150px;
+    transition: .5s linear;
+}
+
+aside.menu .icon_remove {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: #B5B0A7;
+    cursor: pointer;
+}
+
+aside.menu ul {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+aside.menu ul li {
+    list-style: none;
+    padding: 20px 0;
+}
+
+aside.menu ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+aside.menu ul li a:hover {
+    color: #99001C;
+}
 
 @media (min-width:576px) {
     section.logo .menu_burger {
@@ -125,6 +199,10 @@ img.gift {
 
 @media (min-width:576px) and (orientation: landscape) {
     section.logo {
+        height: 100vh;
+    }
+
+    section.logo .wrap_logo {
         height: 100vh;
     }
 }
