@@ -28,3 +28,22 @@ icon_remove.addEventListener('click', () => {
     section_logo.classList.remove('active')
     icon_add.classList.remove('active')
 })
+
+
+// SECTION WELCOME
+
+const img_santa = document.querySelector('.img_santa')
+
+window.addEventListener('scroll', () => {
+    const sizeOntop = window.scrollY;
+
+    if (sizeOntop > img_santa.offsetTop + img_santa.clientHeight - window.innerHeight) {
+        img_santa.classList.add('active')
+    }
+
+    const increaseSanta = () => {
+        img_santa.classList.add('move')
+    }
+
+    setTimeout(increaseSanta, 2000)
+})
