@@ -190,13 +190,13 @@ section.welcome {
     background: #3a7bd5;
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    height: 75vh;
+    height: 80vh;
 }
 
 .wrap_welcome {
     display: flex;
     flex-direction: column;
-    height: 75vh;
+    height: 80vh;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -235,6 +235,12 @@ section.welcome p {
     transition: 1s;
     width: 250px;
     margin-top: 30px;
+}
+
+.wrap_img_santa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img_santa.active {
