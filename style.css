@@ -239,7 +239,7 @@ section.welcome p {
 }
 
 .img_santa.active.move {
-    animation: 2s linear infinite increaseSanta;
+    animation: 6s linear infinite increaseSanta;
 }
 
 @keyframes increaseSanta {
