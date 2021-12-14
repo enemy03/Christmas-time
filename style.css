@@ -190,13 +190,15 @@ section.welcome {
     background: #3a7bd5;
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    height: 85vh;
+    height: 75vh;
 }
 
 .wrap_welcome {
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 75vh;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 section.welcome h2 {
@@ -232,6 +234,7 @@ section.welcome p {
     transform: scale(0);
     transition: 1s;
     width: 250px;
+    margin-top: 30px;
 }
 
 .img_santa.active {
@@ -268,6 +271,25 @@ section.welcome p {
     div.santa {
         width: 130px;
     }
+
+    /* SECTION WELCOME */
+
+
+    section.welcome h2 {
+        font-size: 6rem;
+    }
+
+
+    section.welcome p {
+        font-size: 1.5rem;
+    }
+
+    .img_santa {
+
+        width: 300px;
+    }
+
+
 }
 
 @media (min-width:576px) and (orientation: landscape) {
@@ -298,6 +320,17 @@ section.welcome p {
 
     section.logo.active {
         right: -250px;
+    }
+
+    /* SECTION WELCOME */
+
+
+    section.welcome {
+        height: 155vh;
+    }
+
+    .wrap_welcome {
+        height: 155vh;
     }
 
 
@@ -423,6 +456,40 @@ section.welcome p {
     }
 
 
+    /* SECTION WELCOME */
+
+
+    section.welcome {
+        height: 60vh;
+
+    }
+
+    .wrap_welcome {
+        flex-direction: row;
+        height: 60vh;
+        padding: 40px 0;
+    }
+
+    section.welcome h2 {
+        font-size: 6.5rem;
+    }
+
+
+    section.welcome p {
+        font-size: 1.5rem;
+    }
+
+    .wrap_txt {
+        flex-basis: 70%;
+    }
+
+    .img_santa {
+        margin-top: 50px;
+        flex-basis: 30%;
+        justify-self: center;
+        align-self: center;
+    }
+
 }
 
 
@@ -454,6 +521,64 @@ section.welcome p {
 
     aside.menu ul li a {
         font-size: 1.7rem;
+    }
+
+    /* SECTION WELCOME */
+
+
+    section.welcome {
+        height: 60vh;
+
+    }
+
+    .wrap_welcome {
+        flex-direction: row;
+        height: 60vh;
+        padding: 40px 0;
+    }
+
+    section.welcome h2 {
+        font-size: 6.5rem;
+    }
+
+
+    section.welcome p {
+        font-size: 1.5rem;
+    }
+
+    .wrap_txt {
+        flex-basis: 70%;
+    }
+
+    .img_santa {
+        margin-top: 50px;
+        flex-basis: 30%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* SECTION WELCOME */
+
+    section.welcome p {
+        font-size: 1.6rem;
+    }
+
+    .wrap_txt {
+        flex-basis: 50%;
+    }
+
+    .wrap_img_santa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+
+    .img_santa {
+        margin-top: 50px;
+        flex-basis: 400px;
+        justify-self: center;
+        align-self: center;
     }
 }
 
@@ -507,6 +632,41 @@ section.welcome p {
         width: 100px;
         bottom: 10px;
         right: 50px;
+    }
+
+
+    /* SECTION WELCOME */
+    section.welcome {
+        padding-left: 30px;
+    }
+
+    section.welcome h2 {
+        font-size: 8rem;
+    }
+
+
+    section.welcome p {
+        font-size: 1.8rem;
+    }
+
+    .wrap_txt {
+        flex-basis: 50%;
+    }
+
+    .wrap_img_santa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        margin-left: 100px;
+    }
+
+    .img_santa {
+        margin-top: 30px;
+        flex-basis: 450px;
+        justify-self: center;
+        align-self: center;
+        margin-left: 100px;
     }
 
 
@@ -570,6 +730,37 @@ section.welcome p {
 
     aside.menu ul li a {
         font-size: 1.8rem;
+    }
+
+
+    /* SECTION WELCOME */
+    section.welcome {
+        padding-left: 30px;
+        height: 70vh;
+    }
+
+    .wrap_welcome {
+        height: 70vh;
+    }
+
+    section.welcome h2 {
+        font-size: 10rem;
+    }
+
+
+    section.welcome p {
+        font-size: 2.1rem;
+        line-height: 35px;
+    }
+
+    .wrap_img_santa {
+        flex-basis: 50%;
+        margin-left: 0;
+    }
+
+    .img_santa {
+        margin-top: 30px;
+        flex-basis: 650px;
     }
 
 
