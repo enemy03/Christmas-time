@@ -196,6 +196,7 @@ section.welcome {
 .wrap_welcome {
     display: flex;
     flex-direction: column;
+    height: 85vh;
 }
 
 section.welcome h2 {
