@@ -193,6 +193,11 @@ section.welcome {
     height: 85vh;
 }
 
+.wrap_welcome {
+    display: flex;
+    flex-direction: column;
+}
+
 section.welcome h2 {
     font-size: 5rem;
     color: white;
@@ -222,8 +227,10 @@ section.welcome p {
 }
 
 .img_santa {
+    align-self: center;
     transform: scale(0);
     transition: 1s;
+    width: 250px;
 }
 
 .img_santa.active {
