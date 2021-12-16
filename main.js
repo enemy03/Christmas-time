@@ -47,3 +47,25 @@ window.addEventListener('scroll', () => {
 
     setTimeout(increaseSanta, 2000)
 })
+
+
+// SECTION EVENTS
+
+const snowflake = document.querySelectorAll('section.events .wrap_img');
+const bubble = document.querySelector('.wrap_christmas_bomb')
+const sectionEvents = document.querySelector('section.events');
+
+window.addEventListener('scroll', () => {
+    const sizeOntop = window.scrollY;
+
+    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight - window.innerHeight) {
+        snowflake.forEach(s => {
+            s.classList.add('show')
+        });
+    }
+
+    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight - window.innerHeight) {
+        bubble.classList.add('show')
+    }
+
+})

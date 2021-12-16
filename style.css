@@ -312,10 +312,14 @@ section.events img {
     width: 100%;
 }
 
-section .wrap_img {
+section.events .wrap_img {
     height: 30px;
     width: 30px;
     transform: scale(0);
+
+}
+
+section .wrap_img.show {
     animation: 3s linear show_snowflake both;
 }
 
@@ -341,6 +345,10 @@ section .wrap_img {
     right: -60px;
     width: 250px;
     z-index: 0;
+
+}
+
+.wrap_events .wrap_christmas_bomb.show {
     animation: 3s show_bubble both;
 }
 
