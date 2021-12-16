@@ -12,6 +12,8 @@ sans-serif; */
 html {
     font-size: 10px;
     overflow-x: hidden;
+    font-family: 'Poppins',
+        sans-serif;
 }
 
 
@@ -249,6 +251,122 @@ section.welcome p {
 
 .img_santa.active.move {
     animation: 6s linear infinite increaseSanta;
+}
+
+
+/* SECTION EVENTS */
+
+section.events {
+    background-image: url(img/north_star_welcome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.wrap_events {
+    position: relative;
+}
+
+.wrap_events h2 {
+    font-size: 3rem;
+    font-family: 'Mountains of Christmas';
+    color: white;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.wrap_events p {
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.wrap_events ul {
+    margin-top: 30px;
+}
+
+
+.wrap_events li {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.wrap_events .event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.events img {
+    height: 100%;
+    width: 100%;
+}
+
+section .wrap_img {
+    height: 30px;
+    width: 30px;
+    transform: scale(0);
+    animation: 3s linear show_snowflake both;
+}
+
+
+@keyframes show_snowflake {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.wrap_events .wrap_christmas_bomb {
+    position: absolute;
+    top: -500px;
+    right: -60px;
+    width: 250px;
+    z-index: 0;
+    animation: 3s show_bubble both;
+}
+
+@keyframes show_bubble {
+    0% {
+        top: -500px;
+    }
+
+    100% {
+        top: -45px;
+    }
+}
+
+.wrap_events .wrap_christmas_bomb span {
+    position: absolute;
+    left: 34%;
+    bottom: 41%;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.XD {
+    height: 200vh;
 }
 
 @keyframes increaseSanta {
