@@ -58,13 +58,13 @@ const sectionEvents = document.querySelector('section.events');
 window.addEventListener('scroll', () => {
     const sizeOntop = window.scrollY;
 
-    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight - window.innerHeight) {
+    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight / 1.5 - window.innerHeight) {
         snowflake.forEach(s => {
             s.classList.add('show')
         });
     }
 
-    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight - window.innerHeight) {
+    if (sizeOntop > sectionEvents.offsetTop + sectionEvents.clientHeight / 1.5 - window.innerHeight) {
         bubble.classList.add('show')
     }
 

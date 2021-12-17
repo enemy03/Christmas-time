@@ -265,10 +265,14 @@ section.events {
     height: 70vh;
     padding: 30px 0;
     overflow: hidden;
+
 }
 
 .wrap_events {
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+
 }
 
 .wrap_events h2 {
@@ -421,6 +425,46 @@ section.XD {
         width: 300px;
     }
 
+    /* SECTION EVENTS */
+
+    .wrap_events h2 {
+        font-size: 4rem;
+    }
+
+    .wrap_events p {
+        font-size: 1.5rem;
+        padding: 10px 80px 10px 10px;
+    }
+
+    .wrap_events ul {
+        margin-top: 30px;
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -500px;
+        right: -10px;
+        width: 280px;
+
+    }
+
+    .wrap_events .wrap_christmas_bomb.show {
+        animation: 3s show_bubble both;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -500px;
+        }
+
+        100% {
+            top: -95px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        left: 36%;
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -463,6 +507,12 @@ section.XD {
 
     .wrap_welcome {
         height: 155vh;
+    }
+
+    /* SECTION EVENTS */
+
+    section.events {
+        height: 150vh;
     }
 
 
@@ -617,10 +667,59 @@ section.XD {
 
     .img_santa {
         margin-top: 50px;
-        flex-basis: 30%;
         justify-self: center;
         align-self: center;
     }
+
+
+    /* SECTION EVENTS */
+
+    .wrap_events h2 {
+        font-size: 4.5rem;
+        padding-right: 30%;
+    }
+
+    .wrap_events p {
+        font-size: 1.7rem;
+        padding: 10px 30% 10px 10px;
+    }
+
+    .wrap_events ul {
+        margin-top: 30px;
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -500px;
+        right: 50px;
+        width: 320px;
+
+    }
+
+    .wrap_events .wrap_christmas_bomb.show {
+        animation: 3s show_bubble both;
+    }
+
+    section.events .wrap_img {
+        height: 35px;
+        width: 35px;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -500px;
+        }
+
+        100% {
+            top: -185px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        left: 36%;
+        font-size: 1.6rem;
+    }
+
+
 
 }
 
@@ -712,6 +811,50 @@ section.XD {
         justify-self: center;
         align-self: center;
     }
+
+    /* SECTION EVENTS */
+
+    section.events {
+        height: 70vh;
+        padding: 30px 10px;
+    }
+
+
+    .wrap_events h2 {
+        font-size: 5rem;
+        padding-right: 30%;
+    }
+
+    .wrap_events p {
+        font-size: 1.7rem;
+        padding: 10px 40% 10px 10px;
+    }
+
+    .wrap_events ul {
+        margin-top: 30px;
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -900px;
+        right: 0px;
+        width: 500px;
+
+    }
+
+
+    @keyframes show_bubble {
+        0% {
+            top: -900px;
+        }
+
+        100% {
+            top: -505px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        font-size: 2.5rem;
+    }
 }
 
 
@@ -801,6 +944,41 @@ section.XD {
         margin-left: 100px;
     }
 
+
+    /* SECTION EVENTS */
+
+    section.events {
+        height: 90vh;
+        padding: 30px 40px;
+    }
+
+
+    .wrap_events h2 {
+        font-size: 6rem;
+        padding-right: 30%;
+    }
+
+    .wrap_events p {
+        font-size: 1.9rem;
+        padding: 10px 40% 10px 10px;
+    }
+
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -900px;
+        right: 0px;
+        width: 500px;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -900px;
+        }
+
+        100% {
+            top: -355px;
+        }
+    }
 
 }
 
@@ -894,6 +1072,48 @@ section.XD {
         margin-top: 30px;
         flex-basis: 650px;
     }
+
+    /* SECTION EVENTS */
+
+    section.events {
+        height: 90vh;
+        padding: 150px 40px 30px 40px;
+    }
+
+
+    .wrap_events h2 {
+        font-size: 8rem;
+        padding-right: 30%;
+    }
+
+    .wrap_events p {
+        font-size: 2.3rem;
+        padding: 10px 50% 10px 10px;
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -1500px;
+        right: -250px;
+        width: 700px;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -1500px;
+        }
+
+        100% {
+            top: -705px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        left: 36%;
+        font-size: 3.5rem;
+    }
+
+
+
 
 
 }
