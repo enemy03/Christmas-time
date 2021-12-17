@@ -377,6 +377,36 @@ section .wrap_img.show {
     cursor: pointer;
 }
 
+
+section.gifts {
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    height: 90vh;
+}
+
+.wrap_gifts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap_gifts h1 {
+    font-size: 3.5rem;
+    font-family: 'Mountains of Christmas';
+    color: white;
+    padding: 30px 10px;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.wrap_gifts .gift {
+    width: 130px;
+    height: 130px;
+    margin: 30px;
+}
+
 section.XD {
     height: 200vh;
 }
