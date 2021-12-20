@@ -409,11 +409,28 @@ section.gifts {
     width: 100px;
     height: 100px;
     margin: 5%;
-    transition: 1s;
 }
 
 .wrap_gifts .first.active {
-    transform: scale(1.5) rotate(360deg);
+    animation: 1s rotateGift linear;
+}
+
+.wrap_gifts .second.active {
+    animation: 1s rotateGift linear;
+}
+
+.wrap_gifts .third.active {
+    animation: 1s rotateGift linear;
+}
+
+@keyframes rotateGift {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .wrap_gifts .second.active {
@@ -654,6 +671,15 @@ section.XD {
     /* SECTION WELCOME */
 
 
+    section.welcome {
+        height: 90vh;
+    }
+
+    .wrap_welcome {
+        height: 90vh;
+    }
+
+
     section.welcome h2 {
         font-size: 6rem;
     }
@@ -664,8 +690,7 @@ section.XD {
     }
 
     .img_santa {
-
-        width: 300px;
+        width: 280px;
     }
 
     /* SECTION EVENTS */
@@ -752,12 +777,45 @@ section.XD {
         height: 155vh;
     }
 
+    .wrap_img_santa {
+        width: 240px;
+        align-self: center;
+    }
+
     /* SECTION EVENTS */
 
     section.events {
         height: 150vh;
     }
 
+
+    /* SECTION GIFTS */
+
+    .wrap_gifts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .wrap_gifts h1 {
+        flex-basis: 100%;
+        padding: 40px 10px;
+    }
+
+    .wrap_gifts .gift {
+        margin-bottom: 100px;
+    }
+
+
+    .wrap_gifts aside.giftAll .wrap_img {
+        margin-top: 30px;
+        width: 150px;
+    }
+
+    .wrap_gifts aside.giftAll button {
+        margin-top: 30px;
+        padding: 10px 20px;
+    }
 
 }
 
@@ -793,18 +851,18 @@ section.XD {
     ASIDE MENU */
 
     aside.menu {
-        height: 70vh;
+        height: 100vh;
         width: 200px;
         left: -200px;
         transition: .5s linear;
     }
 
     aside.menu ul {
-        padding: 50px 0;
+        padding: 100px 0;
     }
 
     aside.menu ul li {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     section.logo.active {
@@ -844,13 +902,22 @@ section.XD {
         }
     }
 
+    .wrap_events .wrap_christmas_bomb {
+        top: -800px;
+    }
+
 
     div.gift {
         position: absolute;
         bottom: 50px;
         right: 30px;
         width: 70px;
-        animation: .4s .4s linear infinite move_gift, 1s show_thing linear;
+
+    }
+
+    div.gift.move {
+        animation: .4s 1s linear infinite move_gift,
+            1s show_thing linear;
     }
 
     img.gift {
@@ -880,9 +947,7 @@ section.XD {
 
     }
 
-
     /* SECTION WELCOME */
-
 
     section.welcome {
         height: 60vh;
@@ -914,8 +979,11 @@ section.XD {
         align-self: center;
     }
 
-
     /* SECTION EVENTS */
+
+    section.events {
+        height: 90vh;
+    }
 
     .wrap_events h2 {
         font-size: 4.5rem;
@@ -932,7 +1000,7 @@ section.XD {
     }
 
     .wrap_events .wrap_christmas_bomb {
-        top: -500px;
+        top: -700px;
         right: 50px;
         width: 320px;
 
@@ -949,11 +1017,11 @@ section.XD {
 
     @keyframes show_bubble {
         0% {
-            top: -500px;
+            top: -700px;
         }
 
         100% {
-            top: -185px;
+            top: -95px;
         }
     }
 
@@ -962,401 +1030,471 @@ section.XD {
         font-size: 1.6rem;
     }
 
+    /* SECTION GIFTS */
 
-
-}
-
-
-@media (min-width:992px) {
-    section.logo h1 {
-        font-size: 7rem;
+    section.gifts {
+        height: 80vh;
     }
 
-    /* 
-    ASIDE MENU */
-
-    aside.menu {
-        height: 100vh;
-        width: 300px;
-        left: -300px;
-    }
-
-    aside.menu ul {
-        padding: 50px 0;
-    }
-
-    aside.menu ul li {
-        padding: 20px 0;
-    }
-
-    section.logo.active {
-        right: -300px;
-    }
-
-    aside.menu ul li a {
-        font-size: 1.7rem;
-    }
-
-    /* SECTION WELCOME */
-
-
-    section.welcome {
-        height: 60vh;
+    .wrap_gifts {
+        height: 80vh;
 
     }
 
-    .wrap_welcome {
-        flex-direction: row;
-        height: 60vh;
-        padding: 40px 0;
-    }
-
-    section.welcome h2 {
-        font-size: 6.5rem;
-    }
-
-
-    section.welcome p {
-        font-size: 1.5rem;
-    }
-
-    .wrap_txt {
-        flex-basis: 70%;
-    }
-
-    .img_santa {
-        margin-top: 50px;
-        flex-basis: 30%;
-        justify-self: center;
-        align-self: center;
-    }
-
-    /* SECTION WELCOME */
-
-    section.welcome p {
-        font-size: 1.6rem;
-    }
-
-    .wrap_txt {
-        flex-basis: 50%;
-    }
-
-    .wrap_img_santa {
+    .wrap-gifts {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 50%;
+        justify-content: space-around;
+        width: 100%;
+        padding-left: 50px;
     }
 
-    .img_santa {
-        margin-top: 50px;
-        flex-basis: 400px;
-        justify-self: center;
-        align-self: center;
-    }
-
-    /* SECTION EVENTS */
-
-    section.events {
-        height: 70vh;
-        padding: 30px 10px;
-    }
-
-
-    .wrap_events h2 {
-        font-size: 5rem;
-        padding-right: 30%;
-    }
-
-    .wrap_events p {
-        font-size: 1.7rem;
-        padding: 10px 40% 10px 10px;
-    }
-
-    .wrap_events ul {
-        margin-top: 30px;
-    }
-
-    .wrap_events .wrap_christmas_bomb {
-        top: -900px;
-        right: 0px;
-        width: 500px;
-
-    }
-
-
-    @keyframes show_bubble {
-        0% {
-            top: -900px;
-        }
-
-        100% {
-            top: -505px;
-        }
-    }
-
-    .wrap_events .wrap_christmas_bomb span {
-        font-size: 2.5rem;
-    }
-}
-
-
-@media (min-width:1200px) {
-
-    section.logo {
-        background-image: url(img/background_logo_big.png);
-        height: 100vh;
-    }
-
-    section.logo h1 {
-        font-size: 8rem;
-    }
-
-    section.logo .menu_burger {
-        width: 50px;
-    }
-
-    div.santa {
-        top: 50px;
-        right: -250px;
-        width: 120px;
-    }
-
-    @keyframes move_santa {
-        0% {
-            right: -150px;
-            top: 20px;
-        }
-
-        100% {
-            right: 100%;
-            top: 130px;
-
-        }
-    }
-
-
-    div.santa {
-        width: 160px;
-    }
-
-    div.snowman {
-        width: 180px;
-        bottom: 10px;
-        left: 50px;
-    }
-
-    div.gift {
-        width: 100px;
-        bottom: 10px;
-        right: 50px;
-    }
-
-
-    /* SECTION WELCOME */
-    section.welcome {
-        padding-left: 30px;
-    }
-
-    section.welcome h2 {
-        font-size: 8rem;
-    }
-
-
-    section.welcome p {
-        font-size: 1.8rem;
-    }
-
-    .wrap_txt {
-        flex-basis: 50%;
-    }
-
-    .wrap_img_santa {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 50%;
-        margin-left: 100px;
-    }
-
-    .img_santa {
-        margin-top: 30px;
-        flex-basis: 450px;
-        justify-self: center;
-        align-self: center;
-        margin-left: 100px;
-    }
-
-
-    /* SECTION EVENTS */
-
-    section.events {
-        height: 90vh;
-        padding: 30px 40px;
-    }
-
-
-    .wrap_events h2 {
-        font-size: 6rem;
-        padding-right: 30%;
-    }
-
-    .wrap_events p {
-        font-size: 1.9rem;
-        padding: 10px 40% 10px 10px;
-    }
-
-
-    .wrap_events .wrap_christmas_bomb {
-        top: -900px;
-        right: 0px;
-        width: 500px;
-    }
-
-    @keyframes show_bubble {
-        0% {
-            top: -900px;
-        }
-
-        100% {
-            top: -355px;
-        }
-    }
-
-}
-
-
-@media (min-width:1400px) {
-
-    section.logo h1 {
-        font-size: 11rem;
-    }
-
-    section.logo .menu_burger {
-        width: 50px;
-        left: 50px;
-        top: 30px;
-    }
-
-    div.santa {
-        top: 30px;
-        right: -250px;
-        width: 180px;
-    }
-
-    @keyframes move_santa {
-        0% {
-            right: -150px;
-        }
-
-        100% {
-            right: 100%;
-            top: 150px;
-
-        }
-    }
-
-    div.snowman {
-        width: 230px;
-        bottom: 10px;
-        left: 50px;
-    }
-
-    div.gift {
+    .wrap_gifts .gift {
         width: 150px;
-        bottom: 10px;
-        right: 50px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .wrap_gifts h1 {
+        font-size: 4.5rem;
+    }
+
+    .wrap_gifts aside.giftAll.active.show {
+        animation: 1s .3s showAside linear both;
     }
 
 
-    /* 
-    ASIDE MENU */
-
-    aside.menu {
-        width: 400px;
-        left: -400px;
+    .wrap_gifts aside.giftAll .wrap_img.active {
+        animation: 1s 1s linear showIconClose both;
     }
 
-    section.logo.active {
-        right: -400px;
+    .wrap_gifts aside.giftAll p.active {
+        animation: 1s 1s linear showIconClose both;
     }
 
-    aside.menu ul li a {
-        font-size: 1.8rem;
+    .wrap_gifts aside.giftAll button.active {
+        animation: 1s 1s linear showIconClose both;
     }
 
-
-    /* SECTION WELCOME */
-    section.welcome {
-        padding-left: 30px;
-        height: 70vh;
+    .wrap_gifts aside.giftAll .wrap_img {
+        margin-top: 120px;
     }
 
-    .wrap_welcome {
-        height: 70vh;
+    .wrap_gifts aside.giftAll .wrap_img {
+        width: 210px;
     }
 
-    section.welcome h2 {
-        font-size: 10rem;
+    .wrap_gifts aside.giftAll p {
+        font-size: 2.4rem;
     }
 
-
-    section.welcome p {
-        font-size: 2.1rem;
-        line-height: 35px;
-    }
-
-    .wrap_img_santa {
-        flex-basis: 50%;
-        margin-left: 0;
-    }
-
-    .img_santa {
-        margin-top: 30px;
-        flex-basis: 650px;
-    }
-
-    /* SECTION EVENTS */
-
-    section.events {
-        height: 90vh;
-        padding: 150px 40px 30px 40px;
+    .wrap_gifts aside.giftAll button {
+        padding: 10px 25px;
+        margin-top: 50px;
     }
 
 
-    .wrap_events h2 {
-        font-size: 8rem;
-        padding-right: 30%;
-    }
 
-    .wrap_events p {
-        font-size: 2.3rem;
-        padding: 10px 50% 10px 10px;
-    }
-
-    .wrap_events .wrap_christmas_bomb {
-        top: -1500px;
-        right: -250px;
-        width: 700px;
-    }
-
-    @keyframes show_bubble {
+    @keyframes showAside {
         0% {
-            top: -1500px;
+            width: 0;
+            height: 0;
         }
 
         100% {
-            top: -705px;
+            width: 100%;
+            height: 80vh;
+        }
+
+
+    }
+
+    @media (min-width:992px) {
+        section.logo h1 {
+            font-size: 7rem;
+        }
+
+        /* 
+    ASIDE MENU */
+
+        aside.menu {
+            height: 100vh;
+            width: 300px;
+            left: -300px;
+        }
+
+        aside.menu ul {
+            padding: 50px 0;
+        }
+
+        aside.menu ul li {
+            padding: 20px 0;
+        }
+
+        section.logo.active {
+            right: -300px;
+        }
+
+        aside.menu ul li a {
+            font-size: 1.7rem;
+        }
+
+        /* SECTION WELCOME */
+
+
+        section.welcome {
+            height: 60vh;
+
+        }
+
+        .wrap_welcome {
+            flex-direction: row;
+            height: 60vh;
+            padding: 40px 0;
+        }
+
+        section.welcome h2 {
+            font-size: 6.5rem;
+        }
+
+
+        section.welcome p {
+            font-size: 1.5rem;
+        }
+
+        .wrap_txt {
+            flex-basis: 70%;
+        }
+
+        .img_santa {
+            margin-top: 50px;
+            flex-basis: 30%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        /* SECTION WELCOME */
+
+        section.welcome p {
+            font-size: 1.6rem;
+        }
+
+        .wrap_txt {
+            flex-basis: 50%;
+        }
+
+        .wrap_img_santa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+
+        .img_santa {
+            margin-top: 50px;
+            flex-basis: 400px;
+            justify-self: center;
+            align-self: center;
+        }
+
+        /* SECTION EVENTS */
+
+        section.events {
+            height: 70vh;
+            padding: 30px 10px;
+        }
+
+
+        .wrap_events h2 {
+            font-size: 5rem;
+            padding-right: 30%;
+        }
+
+        .wrap_events p {
+            font-size: 1.7rem;
+            padding: 10px 40% 10px 10px;
+        }
+
+        .wrap_events ul {
+            margin-top: 30px;
+        }
+
+        .wrap_events .wrap_christmas_bomb {
+            top: -900px;
+            right: 0px;
+            width: 500px;
+
+        }
+
+
+        @keyframes show_bubble {
+            0% {
+                top: -900px;
+            }
+
+            100% {
+                top: -505px;
+            }
+        }
+
+        .wrap_events .wrap_christmas_bomb span {
+            font-size: 2.5rem;
         }
     }
 
-    .wrap_events .wrap_christmas_bomb span {
-        left: 36%;
-        font-size: 3.5rem;
+    @media (min-width:1200px) {
+
+        section.logo {
+            background-image: url(img/background_logo_big.png);
+            height: 100vh;
+        }
+
+        section.logo h1 {
+            font-size: 8rem;
+        }
+
+        section.logo .menu_burger {
+            width: 50px;
+        }
+
+        div.santa {
+            top: 50px;
+            right: -250px;
+            width: 120px;
+        }
+
+        @keyframes move_santa {
+            0% {
+                right: -150px;
+                top: 20px;
+            }
+
+            100% {
+                right: 100%;
+                top: 130px;
+
+            }
+        }
+
+
+        div.santa {
+            width: 160px;
+        }
+
+        div.snowman {
+            width: 180px;
+            bottom: 10px;
+            left: 50px;
+        }
+
+        div.gift {
+            width: 100px;
+            bottom: 10px;
+            right: 50px;
+        }
+
+
+        /* SECTION WELCOME */
+        section.welcome {
+            padding-left: 30px;
+        }
+
+        section.welcome h2 {
+            font-size: 8rem;
+        }
+
+
+        section.welcome p {
+            font-size: 1.8rem;
+        }
+
+        .wrap_txt {
+            flex-basis: 50%;
+        }
+
+        .wrap_img_santa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 50%;
+            margin-left: 100px;
+        }
+
+        .img_santa {
+            margin-top: 30px;
+            flex-basis: 450px;
+            justify-self: center;
+            align-self: center;
+            margin-left: 100px;
+        }
+
+
+        /* SECTION EVENTS */
+
+        section.events {
+            height: 90vh;
+            padding: 30px 40px;
+        }
+
+
+        .wrap_events h2 {
+            font-size: 6rem;
+            padding-right: 30%;
+        }
+
+        .wrap_events p {
+            font-size: 1.9rem;
+            padding: 10px 40% 10px 10px;
+        }
+
+
+        .wrap_events .wrap_christmas_bomb {
+            top: -900px;
+            right: 0px;
+            width: 500px;
+        }
+
+        @keyframes show_bubble {
+            0% {
+                top: -900px;
+            }
+
+            100% {
+                top: -355px;
+            }
+        }
+
     }
 
+    @media (min-width:1400px) {
+
+        section.logo h1 {
+            font-size: 11rem;
+        }
+
+        section.logo .menu_burger {
+            width: 50px;
+            left: 50px;
+            top: 30px;
+        }
+
+        div.santa {
+            top: 30px;
+            right: -250px;
+            width: 180px;
+        }
+
+        @keyframes move_santa {
+            0% {
+                right: -150px;
+            }
+
+            100% {
+                right: 100%;
+                top: 150px;
+
+            }
+        }
+
+        div.snowman {
+            width: 230px;
+            bottom: 10px;
+            left: 50px;
+        }
+
+        div.gift {
+            width: 150px;
+            bottom: 10px;
+            right: 50px;
+        }
+
+
+        /* 
+    ASIDE MENU */
+
+        aside.menu {
+            width: 400px;
+            left: -400px;
+        }
+
+        section.logo.active {
+            right: -400px;
+        }
+
+        aside.menu ul li a {
+            font-size: 1.8rem;
+        }
+
+
+        /* SECTION WELCOME */
+        section.welcome {
+            padding-left: 30px;
+            height: 70vh;
+        }
+
+        .wrap_welcome {
+            height: 70vh;
+        }
+
+        section.welcome h2 {
+            font-size: 10rem;
+        }
+
+
+        section.welcome p {
+            font-size: 2.1rem;
+            line-height: 35px;
+        }
+
+        .wrap_img_santa {
+            flex-basis: 50%;
+            margin-left: 0;
+        }
+
+        .img_santa {
+            margin-top: 30px;
+            flex-basis: 650px;
+        }
+
+        /* SECTION EVENTS */
+
+        section.events {
+            height: 90vh;
+            padding: 150px 40px 30px 40px;
+        }
+
+
+        .wrap_events h2 {
+            font-size: 8rem;
+            padding-right: 30%;
+        }
+
+        .wrap_events p {
+            font-size: 2.3rem;
+            padding: 10px 50% 10px 10px;
+        }
+
+        .wrap_events .wrap_christmas_bomb {
+            top: -1500px;
+            right: -250px;
+            width: 700px;
+        }
+
+        @keyframes show_bubble {
+            0% {
+                top: -1500px;
+            }
+
+            100% {
+                top: -705px;
+            }
+        }
+
+        .wrap_events .wrap_christmas_bomb span {
+            left: 36%;
+            font-size: 3.5rem;
+        }
 
 
 
-
+    }
 }

@@ -98,13 +98,15 @@ const btn_3 = document.querySelector('aside.gift_3 button');
 
 gift_1.addEventListener('click', () => {
     gift_1.classList.add('active');
+    gift_1.classList.remove('move')
     aside_1.classList.add('active')
     aside_1.classList.add('show')
     img_1.classList.add('active')
     p_1.classList.add('active')
     btn_1.classList.add('active')
 
-});
+
+})
 
 btnCloseAside.addEventListener('click', () => {
     gift_1.classList.remove('active');
@@ -113,6 +115,7 @@ btnCloseAside.addEventListener('click', () => {
     img_1.classList.remove('active')
     p_1.classList.remove('active')
     btn_1.classList.remove('active')
+    gift_1.classList.add('move')
 });
 
 
@@ -123,6 +126,7 @@ gift_2.addEventListener('click', () => {
     img_2.classList.add('active');
     p_2.classList.add('active');
     btn_2.classList.add('active');
+    gift_2.classList.remove('move')
 });
 
 btnCloseAside_2.addEventListener('click', () => {
@@ -132,6 +136,7 @@ btnCloseAside_2.addEventListener('click', () => {
     img_2.classList.remove('active')
     p_2.classList.remove('active')
     btn_2.classList.remove('active')
+    gift_2.classList.add('move')
 })
 
 
@@ -142,6 +147,7 @@ gift_3.addEventListener('click', () => {
     img_3.classList.add('active');
     p_3.classList.add('active');
     btn_3.classList.add('active');
+    gift_3.classList.remove('move')
 })
 
 btnCloseAside_3.addEventListener('click', () => {
@@ -151,4 +157,5 @@ btnCloseAside_3.addEventListener('click', () => {
     img_3.classList.remove('active')
     p_3.classList.remove('active')
     btn_3.classList.remove('active')
+    gift_3.classList.add('move')
 })
