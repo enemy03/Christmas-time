@@ -69,3 +69,86 @@ window.addEventListener('scroll', () => {
     }
 
 })
+
+
+
+// SECTION GIFTS
+
+
+const gift_1 = document.querySelector('.wrap_gifts .first');
+const aside_1 = document.querySelector('aside.gift_1');
+const btnCloseAside = document.querySelector('aside.gift_1 button');
+const img_1 = document.querySelector('aside.gift_1 .wrap_img');
+const p_1 = document.querySelector('aside.gift_1 p');
+const btn_1 = document.querySelector('aside.gift_1 button');
+const gift_2 = document.querySelector('.wrap_gifts .second');
+const aside_2 = document.querySelector('aside.gift_2');
+const img_2 = document.querySelector('aside.gift_2 .wrap_img');
+const p_2 = document.querySelector('aside.gift_2 p');
+const btn_2 = document.querySelector('aside.gift_2 button');
+const btnCloseAside_2 = document.querySelector('aside.gift_2 button');
+const gift_3 = document.querySelector('.wrap_gifts .third');
+const aside_3 = document.querySelector('aside.gift_3');
+const btnCloseAside_3 = document.querySelector('aside.gift_3 button');
+const img_3 = document.querySelector('aside.gift_3 .wrap_img');
+const p_3 = document.querySelector('aside.gift_3 p');
+const btn_3 = document.querySelector('aside.gift_3 button');
+
+
+
+gift_1.addEventListener('click', () => {
+    gift_1.classList.add('active');
+    aside_1.classList.add('active')
+    aside_1.classList.add('show')
+    img_1.classList.add('active')
+    p_1.classList.add('active')
+    btn_1.classList.add('active')
+
+});
+
+btnCloseAside.addEventListener('click', () => {
+    gift_1.classList.remove('active');
+    aside_1.classList.remove('active')
+    aside_1.classList.remove('show')
+    img_1.classList.remove('active')
+    p_1.classList.remove('active')
+    btn_1.classList.remove('active')
+});
+
+
+gift_2.addEventListener('click', () => {
+    gift_2.classList.add('active');
+    aside_2.classList.add('active');
+    aside_2.classList.add('show');
+    img_2.classList.add('active');
+    p_2.classList.add('active');
+    btn_2.classList.add('active');
+});
+
+btnCloseAside_2.addEventListener('click', () => {
+    gift_2.classList.remove('active');
+    aside_2.classList.remove('active')
+    aside_2.classList.remove('show')
+    img_2.classList.remove('active')
+    p_2.classList.remove('active')
+    btn_2.classList.remove('active')
+})
+
+
+gift_3.addEventListener('click', () => {
+    gift_3.classList.add('active');
+    aside_3.classList.add('active');
+    aside_3.classList.add('show');
+    img_3.classList.add('active');
+    p_3.classList.add('active');
+    btn_3.classList.add('active');
+})
+
+btnCloseAside_3.addEventListener('click', () => {
+    gift_3.classList.remove('active');
+    aside_3.classList.remove('active')
+    aside_3.classList.remove('show')
+    img_3.classList.remove('active')
+    p_3.classList.remove('active')
+    btn_3.classList.remove('active')
+})
