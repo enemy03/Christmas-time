@@ -17,6 +17,7 @@ html {
 }
 
 
+/* SECTION LOGO */
 
 section.logo {
     position: relative;
@@ -127,6 +128,7 @@ img.gift {
     display: none;
 }
 
+/* ASIDE MENU */
 
 aside.menu.active {
     position: absolute;
@@ -139,11 +141,8 @@ aside.menu {
     top: 0;
     left: -150px;
     background: #3a7bd5;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 70vh;
     width: 150px;
     transition: .5s linear;
@@ -153,27 +152,26 @@ aside.menu .icon_remove {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #B5B0A7;
     cursor: pointer;
 }
 
 aside.menu ul {
-    padding: 50px 0;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
 aside.menu ul li {
     list-style: none;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 aside.menu ul li a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -184,7 +182,6 @@ aside.menu ul li a:hover {
     color: #99001C;
 }
 
-
 /* SECTION WELECOME */
 
 
@@ -192,13 +189,13 @@ section.welcome {
     background: #3a7bd5;
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    height: 80vh;
+    height: 100vh;
 }
 
 .wrap_welcome {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -206,7 +203,7 @@ section.welcome {
 section.welcome h2 {
     font-size: 5rem;
     color: white;
-    padding: 40px 20px 20px 20px;
+    padding: 20px;
     font-family: 'Mountains of Christmas';
     letter-spacing: 1px;
     opacity: 0;
@@ -224,10 +221,10 @@ section.welcome h2 {
 }
 
 section.welcome p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     color: white;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 10px;
     animation: 1s linear showPandH2 both;
 }
 
@@ -235,7 +232,7 @@ section.welcome p {
     align-self: center;
     transform: scale(0);
     transition: 1s;
-    width: 250px;
+    width: 200px;
     margin-top: 30px;
 }
 
@@ -253,6 +250,20 @@ section.welcome p {
     animation: 6s linear infinite increaseSanta;
 }
 
+@keyframes increaseSanta {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
 
 /* SECTION EVENTS */
 
@@ -262,17 +273,15 @@ section.events {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
-    padding: 30px 0;
+    height: 100vh;
+    padding: 20px 0;
     overflow: hidden;
-
 }
 
 .wrap_events {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
 .wrap_events h2 {
@@ -283,7 +292,6 @@ section.events {
     position: relative;
     z-index: 1;
 }
-
 
 .wrap_events p {
     color: white;
@@ -346,8 +354,8 @@ section .wrap_img.show {
 .wrap_events .wrap_christmas_bomb {
     position: absolute;
     top: -500px;
-    right: -60px;
-    width: 250px;
+    right: -50px;
+    width: 200px;
     z-index: 0;
 
 }
@@ -362,7 +370,7 @@ section .wrap_img.show {
     }
 
     100% {
-        top: -45px;
+        top: -25px;
     }
 }
 
@@ -370,13 +378,12 @@ section .wrap_img.show {
     position: absolute;
     left: 34%;
     bottom: 41%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
 }
-
 
 /* SECTION GIFTS */
 
@@ -385,7 +392,7 @@ section.gifts {
     background: #3a7bd5;
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    height: 100vh;
+    height: 120vh;
 
 }
 
@@ -394,8 +401,7 @@ section.gifts {
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 100vh;
-    filter: blur(0) brightness(1);
+    height: 120vh;
 }
 
 .wrap_gifts h1 {
@@ -405,14 +411,14 @@ section.gifts {
     padding: 30px 10px;
     letter-spacing: 1px;
     align-self: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .wrap_gifts .gift {
     position: relative;
-    width: 130px;
-    height: 130px;
-    margin: 30px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
     transition: 1s;
 }
 
@@ -428,7 +434,6 @@ section.gifts {
     transform: scale(1.5) rotate(360deg);
 }
 
-
 .wrap_gifts aside.giftAll {
     position: absolute;
     z-index: -1;
@@ -437,17 +442,9 @@ section.gifts {
     align-items: center;
 }
 
-/* .wrap_gifts aside.gift_2 {
-    position: absolute;
-    z-index: -2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 .wrap_gifts aside.giftAll .wrap_img {
-    margin-top: 150px;
-    width: 300px;
+    margin-top: 100px;
+    width: 200px;
     opacity: 0;
 }
 
@@ -491,7 +488,6 @@ section.gifts {
     background-color: #B71C1C;
 }
 
-
 .wrap_gifts aside.giftAll.active.show {
     position: absolute;
     top: 50%;
@@ -526,7 +522,7 @@ section.gifts {
 
     100% {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
     }
 }
 
@@ -534,17 +530,120 @@ section.XD {
     height: 200vh;
 }
 
-@keyframes increaseSanta {
-    0% {
-        transform: scale(1);
+
+
+@media (min-width:360px) {
+
+    /* ASIDE MENU */
+    aside.menu .icon_remove {
+        font-size: 2rem;
     }
 
-    50% {
-        transform: scale(1.1);
+    aside.menu ul {
+        padding: 50px 0;
     }
 
-    100% {
-        transform: scale(1);
+    aside.menu ul li {
+        padding: 20px 0;
+    }
+
+    aside.menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    /* SECTION WELECOME */
+
+    section.welcome {
+        height: 80vh;
+    }
+
+    .wrap_welcome {
+        height: 80vh;
+    }
+
+    section.welcome h2 {
+        padding: 40px 20px 20px 20px;
+    }
+
+    section.welcome p {
+        font-size: 1.4rem;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .img_santa {
+        width: 250px;
+    }
+
+    /* SECTION EVENTS */
+
+    section.events {
+        height: 70vh;
+        padding: 30px 0;
+    }
+
+    section.events .wrap_img {
+        height: 30px;
+        width: 30px;
+        transform: scale(0);
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        top: -500px;
+        right: -60px;
+        width: 250px;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -500px;
+        }
+
+        100% {
+            top: -45px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        left: 34%;
+        bottom: 41%;
+        font-size: 1.5rem;
+    }
+
+    /* SECTION GIFTS */
+
+    section.gifts {
+        height: 100vh;
+    }
+
+    .wrap_gifts {
+        height: 100vh;
+    }
+
+    .wrap_gifts h1 {
+        margin-bottom: 20px;
+    }
+
+    .wrap_gifts .gift {
+        width: 130px;
+        height: 130px;
+        margin: 30px;
+    }
+
+    .wrap_gifts aside.giftAll .wrap_img {
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    @keyframes showAside {
+        0% {
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            width: 100%;
+            height: 100vh;
+        }
     }
 }
 
