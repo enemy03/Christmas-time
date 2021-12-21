@@ -535,6 +535,44 @@ section.gifts {
     }
 }
 
+
+/* SECTION CHRISMTAS_TREE */
+
+section.christmas_tree {
+    background-image: url(img/christmas-tree.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 90vh;
+}
+
+.wrap_christmas {
+    height: 90vh;
+}
+
+.wrap_christmas .wrap_img-gift {
+    width: 30px;
+    height: 30px;
+}
+
+.wrap_christmas h1 {
+    font-size: 2.5rem;
+    color: white;
+    padding: 20px 40px 20px 10px;
+    font-family: 'Mountains of Christmas';
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 1s linear showPandH2 both;
+}
+
+.wrap_christmas p {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+
 section.XD {
     height: 200vh;
 }
@@ -655,6 +693,24 @@ section.XD {
             height: 110vh;
         }
     }
+
+    /* SECTION CHRISTMAS-TREE */
+
+    .wrap_christmas h1 {
+        font-size: 3.2rem;
+        color: white;
+        padding: 50px 40px 20px 10px;
+        font-family: 'Mountains of Christmas';
+        letter-spacing: 1px;
+    }
+
+    .wrap_christmas p {
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding: 30px 10px;
+    }
+
 }
 
 @media (min-width:576px) {
@@ -735,6 +791,19 @@ section.XD {
         left: 36%;
         font-size: 1.5rem;
     }
+
+    /* SECTION CHRISTMAS-TREE */
+
+    .wrap_christmas h1 {
+        font-size: 4rem;
+        padding: 50px 40px 20px 10px;
+    }
+
+    .wrap_christmas p {
+        font-size: 1.6rem;
+        padding: 30px 140px 30px 10px;
+    }
+
 
 }
 
