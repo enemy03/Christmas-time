@@ -159,3 +159,19 @@ btnCloseAside_3.addEventListener('click', () => {
     btn_3.classList.remove('active')
     gift_3.classList.add('move')
 })
+
+
+// SECTION MINI_GAME
+
+
+const cards = document.querySelectorAll('.wrap_cards .card');
+const wrap_cards = document.querySelector('.wrap_cards');
+window.addEventListener('scroll', () => {
+    const sizeOntop = window.scrollY;
+    cards.forEach(card => {
+        if (sizeOntop > card.offsetTop + card.clientHeight - window.innerHeight) {
+            card.classList.add('active')
+        }
+    })
+
+})
