@@ -687,6 +687,7 @@ section.mini-game {
 .card button p {
     font-size: 1.2rem;
     padding: 6px;
+    margin: 0;
 }
 
 .card button img {
