@@ -586,6 +586,8 @@ section.mini-game {
 .wrap_game {
     display: flex;
     flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
@@ -696,10 +698,6 @@ section.mini-game {
     margin: 0;
 }
 
-
-section.XD {
-    height: 200vh;
-}
 
 @media (min-width:360px) and (min-height:640px) {
 
@@ -938,6 +936,49 @@ section.XD {
         padding: 30px 140px 30px 10px;
     }
 
+    /* SECTION MINI-GAME */
+
+    .wrap_game h1 {
+        font-size: 4rem;
+        color: white;
+        padding: 30px 30% 30px 10px;
+        font-family: 'Mountains of Christmas';
+        letter-spacing: 1px;
+    }
+
+    .wrap_game h3 {
+        font-size: 2.7rem;
+    }
+
+    .wrap_cards .card {
+        padding: 50px 20px;
+        margin: 20px 0;
+        margin-left: -1100px;
+    }
+
+    .card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card p {
+        font-size: 2.1rem;
+    }
+
+    .card button {
+        width: 120px;
+        padding: 5px;
+    }
+
+    .card button p {
+        font-size: 1.3rem;
+        padding: 6px;
+        margin: 0;
+    }
+
+    .card button img {
+        margin: 0 0 0 5px;
+    }
 
 }
 
@@ -1011,7 +1052,6 @@ section.XD {
         margin-bottom: 100px;
     }
 
-
     .wrap_gifts aside.giftAll .wrap_img {
         margin-top: 30px;
         width: 150px;
@@ -1020,6 +1060,17 @@ section.XD {
     .wrap_gifts aside.giftAll button {
         margin-top: 30px;
         padding: 10px 20px;
+    }
+
+
+    /* SECTION CHRISMTAS_TREE */
+
+    section.christmas_tree {
+        height: 100vh;
+    }
+
+    .wrap_christmas {
+        height: 100vh;
     }
 
 }
@@ -1322,6 +1373,40 @@ section.XD {
         line-height: 30px;
     }
 
+    /* SECTION MINI-GAME */
+
+    .wrap_game {
+        padding: 0 0 20px 0;
+    }
+
+    .wrap_game h1 {
+        font-size: 4.5rem;
+    }
+
+    .wrap_game h3 {
+        font-size: 2.8rem;
+    }
+
+    .wrap_game .money {
+        width: 90px;
+        align-items: center;
+        padding: 2px 0;
+    }
+
+    .wrap_game .money img {
+        width: 25%;
+    }
+
+    .wrap_game .wrap_cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .wrap_cards .card {
+        flex-basis: 30%;
+        margin-left: -1600px;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -1492,6 +1577,45 @@ section.XD {
     .wrap_christmas p {
         padding: 50px 40% 30px 20px;
     }
+
+    /* 
+    SECTION MINI-GAME */
+
+    .wrap_game h1 {
+        font-size: 5rem;
+    }
+
+    .wrap_game h3 {
+        font-size: 3rem;
+    }
+
+    .wrap_cards .card {
+        margin-left: -2000px;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card p {
+        font-size: 2.2rem;
+    }
+
+    .card button {
+        width: 130px;
+        padding: 8px;
+    }
+
+    .card button p {
+        font-size: 1.6rem;
+    }
+
+    .card button img {
+        width: 25px;
+        height: 25px;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -1680,6 +1804,28 @@ section.XD {
         padding: 50px 40% 30px 20px;
         font-size: 1.8rem;
     }
+
+    /* 
+    SECTION MINI-GAME */
+
+    .wrap_game h1 {
+        font-size: 6rem;
+        padding-left: 20px;
+    }
+
+    .wrap_game h3 {
+        font-size: 3.5rem;
+    }
+
+    .wrap_game .money {
+        width: 100px;
+    }
+
+    .wrap_cards .card {
+        margin-left: -2500px;
+        flex-basis: 25%;
+    }
+
 }
 
 @media (min-width:1400px) {
@@ -1858,5 +2004,61 @@ section.XD {
     .wrap_christmas p {
         font-size: 2rem;
         padding-right: 50%;
+    }
+
+
+    /* 
+    SECTION MINI-GAME */
+
+    section.mini-game {
+        padding-bottom: 50px;
+    }
+
+    .wrap_game h1 {
+        font-size: 8rem;
+        padding-left: 20px;
+    }
+
+    .wrap_game h3 {
+        font-size: 4rem;
+    }
+
+    .wrap_game .money {
+        width: 120px;
+    }
+
+    .wrap_game .money p {
+        font-size: 1.7rem;
+    }
+
+    .wrap_cards .card {
+        margin-left: -3500px;
+        flex-basis: 25%;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card p {
+        font-size: 2.4rem;
+        padding: 10px;
+    }
+
+    .card button {
+        width: 140px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card button p {
+        font-size: 1.8rem;
+    }
+
+    .card button img {
+        width: 28px;
+        height: 28px;
     }
 }
