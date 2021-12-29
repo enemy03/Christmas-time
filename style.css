@@ -982,7 +982,7 @@ section.mini-game {
     }
 
     .wrap_events .wrap_christmas_bomb {
-        top: -500px;
+        top: -700px;
         right: -10px;
         width: 280px;
 
@@ -994,7 +994,7 @@ section.mini-game {
 
     @keyframes show_bubble {
         0% {
-            top: -500px;
+            top: -700px;
         }
 
         100% {
@@ -1096,12 +1096,6 @@ section.mini-game {
     }
 
     /* SECTION WELCOME */
-
-
-    section.welcome {
-        height: 155vh;
-    }
-
     .wrap_welcome {
         height: 155vh;
     }
@@ -1111,19 +1105,30 @@ section.mini-game {
         align-self: center;
     }
 
-    /* SECTION EVENTS */
 
-    section.events {
-        height: 150vh;
+    /* SECTION EVENTS */
+    @keyframes show_bubble {
+        0% {
+            top: -700px;
+        }
+
+        100% {
+            top: -175px;
+        }
     }
 
-
     /* SECTION GIFTS */
+
+
+    section.gifts {
+        height: 70vh;
+    }
 
     .wrap_gifts {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        height: 70vh;
     }
 
     .wrap_gifts h1 {
@@ -1136,13 +1141,25 @@ section.mini-game {
     }
 
     .wrap_gifts aside.giftAll .wrap_img {
-        margin-top: 30px;
+        margin-top: 40px;
         width: 150px;
     }
 
     .wrap_gifts aside.giftAll button {
         margin-top: 30px;
         padding: 10px 20px;
+    }
+
+    @keyframes showAside {
+        0% {
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            width: 100%;
+            height: 70vh;
+        }
     }
 
 
@@ -1154,6 +1171,13 @@ section.mini-game {
 
     .wrap_christmas {
         height: 100vh;
+    }
+
+
+    /* SECTION MINI-GAME */
+
+    .wrap_cards .card {
+        margin-left: -1300px;
     }
 
 }
@@ -1184,24 +1208,6 @@ section.mini-game {
     img.snowman {
         display: block;
 
-    }
-
-    /* 
-    ASIDE MENU */
-
-    aside.menu {
-        height: 100vh;
-        width: 200px;
-        left: -200px;
-        transition: .5s linear;
-    }
-
-    aside.menu ul {
-        padding: 100px 0;
-    }
-
-    aside.menu ul li {
-        padding: 30px 0;
     }
 
     section.logo.active {
@@ -1241,49 +1247,32 @@ section.mini-game {
         }
     }
 
-    .wrap_events .wrap_christmas_bomb {
-        top: -800px;
+    /* 
+    ASIDE MENU */
+
+    aside.menu {
+        height: 100vh;
+        width: 200px;
+        left: -200px;
+        transition: .5s linear;
     }
 
-
-    div.gift {
-        position: absolute;
-        bottom: 50px;
-        right: 30px;
-        width: 70px;
-
+    aside.menu .icon_remove {
+        font-size: 2rem;
+        top: 10px;
+        right: 20px;
     }
 
-    div.gift.move {
-        animation: .4s 1s linear infinite move_gift,
-            1s show_thing linear;
+    aside.menu ul {
+        padding: 50px 0;
     }
 
-    img.gift {
-        display: block;
+    aside.menu ul li {
+        padding: 30px 0;
     }
 
-    @keyframes move_gift {
-        0% {
-            transform: translate(0) rotate(0);
-        }
-
-        25% {
-            transform: translate(1px, 1px) rotate(2deg);
-        }
-
-        50% {
-            transform: translate(0) rotate(0);
-        }
-
-        75% {
-            transform: translate(-1px, -1px) rotate(2deg);
-        }
-
-        100% {
-            transform: translate(0) rotate(0);
-        }
-
+    aside.menu ul li a {
+        font-size: 1.5rem;
     }
 
     /* SECTION WELCOME */
@@ -1340,7 +1329,7 @@ section.mini-game {
 
     .wrap_events .wrap_christmas_bomb {
         top: -700px;
-        right: 50px;
+        right: -20px;
         width: 320px;
 
     }
@@ -1360,7 +1349,7 @@ section.mini-game {
         }
 
         100% {
-            top: -95px;
+            top: -155px;
         }
     }
 
@@ -1377,14 +1366,13 @@ section.mini-game {
 
     .wrap_gifts {
         height: 80vh;
-
     }
 
     .wrap-gifts {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        padding-left: 50px;
+        margin-bottom: 50px;
     }
 
     .wrap_gifts .gift {
@@ -1415,7 +1403,7 @@ section.mini-game {
     }
 
     .wrap_gifts aside.giftAll .wrap_img {
-        margin-top: 120px;
+        margin-top: 60px;
     }
 
     .wrap_gifts aside.giftAll .wrap_img {
