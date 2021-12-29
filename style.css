@@ -807,12 +807,7 @@ section.mini-game {
 
     /* SECTION WELECOME */
 
-    section.welcome {
-        height: 85vh;
-    }
-
     .wrap_welcome {
-        height: 85vh;
         display: flex;
         flex-direction: column;
         flex-shrink: 0;
