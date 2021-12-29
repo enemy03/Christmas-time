@@ -187,13 +187,11 @@ section.welcome {
     background: #3a7bd5;
     background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
     background: linear-gradient(to right, #3a6073, #3a7bd5);
-    height: 100vh;
 }
 
 .wrap_welcome {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -271,7 +269,6 @@ section.events {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     padding: 5% 0;
     overflow: hidden;
 }
@@ -410,7 +407,9 @@ section.gifts {
     position: relative;
     width: 100px;
     height: 100px;
-    margin: 5%;
+    margin: 30px;
+    cursor: pointer;
+    transition: 1s;
 }
 
 .wrap_gifts .first.active {
@@ -435,12 +434,16 @@ section.gifts {
     }
 }
 
+.wrap_gifts .first.active {
+    transform: rotate(360deg);
+}
+
 .wrap_gifts .second.active {
-    transform: scale(1.5) rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .wrap_gifts .third.active {
-    transform: scale(1.5) rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .wrap_gifts aside.giftAll {
@@ -531,7 +534,7 @@ section.gifts {
 
     100% {
         width: 100%;
-        height: 110vh;
+        height: 110vh
     }
 }
 
@@ -590,7 +593,6 @@ section.mini-game {
     margin: 0 auto;
 }
 
-
 .wrap_game .money {
     position: static;
     display: flex;
@@ -631,7 +633,6 @@ section.mini-game {
     letter-spacing: 1px;
     text-align: center;
 }
-
 
 .wrap_game .wrap_cards {
     display: flex;
@@ -698,6 +699,92 @@ section.mini-game {
     margin: 0;
 }
 
+
+@media (min-width:320px) and (orientation:landscape) {
+
+    /* ASIDE MENU */
+
+    aside.menu .icon_remove {
+        top: 5px;
+        right: 10px;
+        font-size: 1.7rem;
+    }
+
+    aside.menu ul {
+        padding: 10px 0;
+    }
+
+    aside.menu ul li {
+        padding: 8px 0;
+    }
+
+    aside.menu ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* SECTION GIFTS */
+
+    .wrap_gifts aside.giftAll .wrap_img {
+        margin-top: 30px;
+        width: 150px;
+    }
+
+    .wrap_gifts aside.giftAll p {
+        margin-top: 15px;
+    }
+
+    .wrap_gifts aside.giftAll button {
+        margin-top: 20px;
+    }
+
+    /* SECTION EVENTS */
+
+    section.events {
+        padding: 10px 0;
+    }
+
+    .wrap_events h2 {
+        padding: 20px 30% 20px 10px;
+    }
+
+    .wrap_events p {
+        padding: 10px 20% 10px 10px;
+    }
+
+    .wrap_events ul {
+        margin-top: 20px;
+    }
+
+    .wrap_events li {
+        padding: 5px 10px;
+    }
+
+    .wrap_events .wrap_christmas_bomb {
+        width: 250px;
+    }
+
+    @keyframes show_bubble {
+        0% {
+            top: -500px;
+        }
+
+        100% {
+            top: -125px;
+        }
+    }
+
+    .wrap_events .wrap_christmas_bomb span {
+        left: 35%;
+        font-size: 1.3rem;
+    }
+
+    /* SECTION MINI-GAME */
+
+    .wrap_cards .card {
+        width: 50%;
+        margin-left: -900px;
+    }
+}
 
 @media (min-width:360px) and (min-height:640px) {
 
