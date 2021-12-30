@@ -1309,10 +1309,6 @@ section.mini-game {
 
     /* SECTION EVENTS */
 
-    section.events {
-        height: 90vh;
-    }
-
     .wrap_events h2 {
         font-size: 4.5rem;
         padding-right: 30%;
@@ -1359,10 +1355,6 @@ section.mini-game {
     }
 
     /* SECTION GIFTS */
-
-    section.gifts {
-        height: 80vh;
-    }
 
     .wrap_gifts {
         height: 80vh;
