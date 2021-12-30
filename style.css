@@ -1198,14 +1198,50 @@ section.mini-game {
 
     div.snowman {
         position: absolute;
-        bottom: 50px;
+        bottom: 30px;
         left: 10px;
         width: 130px;
         transform: scale(0);
         animation: 1s 1s linear infinite move_snowman, 1s show_thing linear;
     }
 
-    img.snowman {
+    div.gift {
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        width: 130px;
+        transform: scale(0);
+        animation: 1s 1s linear infinite move_gift, 1s show_thing linear;
+    }
+
+
+    @keyframes move_gift {
+
+        0% {
+            transform: translate(0px, 0px) rotate3d(1, 2.0, 3.0, 2deg);
+        }
+
+        25% {
+            transform: translate(2px, -2px) rotate3d(0, 0, 0, 0deg);
+        }
+
+        50% {
+            transform: translate(0, 0) rotate3d(1, 2.0, 3.0, -2deg);
+        }
+
+
+        75% {
+            transform: translate(2px, -2px) rotate3d(0, 0, 0, 0deg);
+        }
+
+        100% {
+            transform: translate(0px, 0px) rotate3d(1, 2.0, 3.0, 2deg);
+        }
+    }
+
+
+    img.snowman,
+    img.gift {
         display: block;
 
     }
@@ -1382,9 +1418,9 @@ section.mini-game {
         animation: 1s .3s showAside linear both;
     }
 
-
     .wrap_gifts aside.giftAll .wrap_img.active {
         animation: 1s 1s linear showIconClose both;
+        margin-top: 30px;
     }
 
     .wrap_gifts aside.giftAll p.active {
@@ -1409,7 +1445,7 @@ section.mini-game {
 
     .wrap_gifts aside.giftAll button {
         padding: 10px 25px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
 
