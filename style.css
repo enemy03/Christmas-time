@@ -1321,7 +1321,7 @@ section.mini-game {
     .wrap_welcome {
         flex-direction: row;
         height: 60vh;
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     section.welcome h2 {
