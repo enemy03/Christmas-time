@@ -1314,14 +1314,14 @@ section.mini-game {
     /* SECTION WELCOME */
 
     section.welcome {
-        height: 60vh;
+        height: 70vh;
 
     }
 
     .wrap_welcome {
         flex-direction: row;
         height: 60vh;
-        padding: 20px 0;
+        padding: 0px 0;
     }
 
     section.welcome h2 {
