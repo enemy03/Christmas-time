@@ -1315,12 +1315,11 @@ section.mini-game {
 
     section.welcome {
         height: 70vh;
-
     }
 
     .wrap_welcome {
         flex-direction: row;
-        height: 60vh;
+        height: 70vh;
         padding: 0px 0;
     }
 
@@ -1432,7 +1431,7 @@ section.mini-game {
     }
 
     .wrap_gifts aside.giftAll .wrap_img {
-        width: 190px;
+        width: 170px;
         margin-top: 30px;
     }
 
